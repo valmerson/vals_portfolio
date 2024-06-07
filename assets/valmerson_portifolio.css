@@ -86,7 +86,7 @@ sobre_mim {
   font-family: Poppins, sans-serif;
   color: rgba(46, 48, 75, 0.603);
   position: absolute;
-  top: 120%;
+  top: 120px;
   right: 0;
   width: 50%;
   max-width: 50%;
@@ -103,7 +103,7 @@ sobre_mim {
 empres_projetos {
   font-family: "Poppins", sans-serif;
   position: absolute;
-  top: 200%;
+  top: 200px;
   right: 0;
   width: 53%;
   max-width: 50%;
@@ -119,7 +119,7 @@ retorno_clientes {
   color: rgba(46, 48, 75, 0.603);
   font-style: italic;
   position: absolute;
-  top: 280%;
+  top: 280px;
   left: 60%;
   right: 0%;
   width: 60%;
@@ -131,7 +131,7 @@ retorno_clientes {
 .projetos {
   font-family: "Helvetica", sans-serif;
   position: absolute;
-  top: 375%;
+  top: 375px;
   right: 0;
   width: 50%;
   max-width: 50%;
@@ -195,7 +195,7 @@ retorno_clientes {
 contato {
   font-family: "Helvetica", sans-serif;
   position: absolute;
-  top: 470%;
+  top: 470px;
   right: 0;
   width: 50%;
   max-width: 50%;
