@@ -1,0 +1,249 @@
+abertura {
+  position: fixed;
+  background: rgb(46, 48, 75);
+  top: 0;
+  left: 0;
+  width: 48%;
+  height: 100%;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.saudacao {
+  font-family: "poppins-thin", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 40;
+  padding-top: 120px;
+  padding-left: 50px;
+  padding-bottom: 0;
+  padding-right: 0;
+  color: #fd8e8e;
+  font-size: large;
+}
+
+.apresenta {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 40;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-bottom: 0;
+  padding-right: 0;
+  color: #fd8e8e;
+  font-size: small;
+}
+
+.botao_contato {
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-bottom: 0;
+  padding-right: 0;
+}
+
+.socialweb {
+  padding-top: 20px;
+  padding-left: 50px;
+  font-family: "Helvetica", sans-serif;
+  font-size: smaller;
+  color: white;
+}
+
+button {
+  font-family: "Helvetica", sans-serif;
+  align-self: start;
+  background-color: #2e304b;
+  color: #fd8e8e;
+  border-radius: 35px;
+  border: 2px solid #fd8e8e;
+  font-size: large;
+  font-weight: bold;
+
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #fd8e8e; /* Cor de fundo do botão ao passar o mouse */
+  color: #2e304b; /* Cor da fonte ao passar o mouse */
+}
+
+imagem {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 52%;
+  max-width: 53%;
+  padding: 0;
+  word-wrap: break-word;
+  text-decoration: solid;
+}
+
+sobre_mim {
+  font-family: "Helvetica", sans-serif;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  width: 50%;
+  max-width: 50%;
+  padding: -10px;
+  word-wrap: break-word;
+  text-decoration: solid;
+}
+
+empres_projetos {
+  font-family: "Helvetica", sans-serif;
+  position: absolute;
+  top: 220%;
+  right: 0;
+  width: 53%;
+  max-width: 50%;
+  padding: -10px;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+retorno_clientes {
+  font-family: "Helvetica", sans-serif;
+  position: absolute;
+  top: 370%;
+  right: 0;
+  width: 50%;
+  max-width: 50%;
+  padding: -10px;
+  word-wrap: break-word;
+}
+
+.projetos {
+  font-family: "Helvetica", sans-serif;
+  position: absolute;
+  top: 430%;
+  right: 0;
+  width: 50%;
+  max-width: 50%;
+  padding: -10px;
+  word-wrap: break-word;
+  text-decoration: solid;
+}
+
+.container {
+  width: 100%; /* Metade direita da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: proximity;
+  /* scroll-snap-type: x mandatory; */
+  -webkit-overflow-scrolling: touch;
+  gap: 16px; /* Espaço entre os cards */
+  padding: 20px; /* Espaço para a rolagem lateral */
+}
+
+.card {
+  flex: none;
+  scroll-snap-align: start;
+  width: 380px; /* Ajuste a largura conforme necessário */
+  height: 510px; /* Ajuste a altura conforme necessário */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: relative; /* Adicionado para que o texto possa ser posicionado dentro do card */
+}
+
+.card img {
+  width: 100%;
+  height: 100%; /* Alterado para ocupar toda a altura do card */
+  object-fit: cover;
+}
+
+.card p {
+  position: absolute; /* Permite posicionar o texto em relação ao card */
+  bottom: 0; /* Alinha o texto à parte inferior do card */
+  left: 0; /* Alinha o texto à esquerda do card */
+  width: 100%; /* Garante que o texto ocupe toda a largura do card */
+  margin: 0; /* Remove margens */
+  padding: 10px; /* Adiciona um pequeno espaçamento interno */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Define um fundo semi-transparente para o texto */
+  font-size: 16px; /* Tamanho da fonte do texto */
+  color: #333; /* Cor do texto */
+}
+
+contato {
+  font-family: "Helvetica", sans-serif;
+  position: absolute;
+  top: 530%;
+  right: 0;
+  width: 50%;
+  max-width: 50%;
+  padding: -10px;
+  word-wrap: break-word;
+}
+
+.empres_projetos {
+  display: block;
+  flex-wrap: wrap;
+
+  /* justify-content: center;
+  align-items: center; */
+}
+
+/* Configurar o container das caixinhas */
+.caixinhas {
+  display: flex;
+  flex-wrap: inherit;
+  margin-left: 0%;
+  right: 100%; /* Empurra o container das caixinhas para a direita */
+  width: 100%; /* O container das caixinhas ocupará 50% da tela */
+  height: 100%;
+  justify-content: center; /* Distribui espaço entre as caixinhas */
+  flex-basis: 200%; /* Define a largura de cada item como 50% da largura do contêiner */
+  box-sizing: content-box;
+}
+
+/* Configurar cada caixinha */
+.caixinha {
+  background: #e0e0e0;
+  display: block;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 41%;
+  height: 150px;
+  /* width: 280px;
+  height: 150px; */
+  /*flex: 1 1 calc(5% - 5px);  Cada caixinha ocupará 50% do container das caixinhas, menos a margem */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.caixinha:hover {
+  background: #d0d0d0;
+}
+
+/* Para telas menores, você pode querer ajustar o layout para uma única coluna */
+@media (max-width: 768px) {
+  .caixinha {
+    flex-basis: calc(100% - 20px); /* Largura total para telas menores */
+  }
+}
