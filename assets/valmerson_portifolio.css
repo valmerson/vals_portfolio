@@ -121,7 +121,7 @@ img {
   -webkit-overflow-scrolling: touch;
   gap: 16px;
   padding: 20px;
-  width: 100%; /* Garante que o carrossel ocupe toda a largura do contêiner */
+  width: 100%;
 }
 
 .card {
