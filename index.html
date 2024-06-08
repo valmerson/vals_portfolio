@@ -3,17 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
     </style>
-
     <title>Val's Portfólio</title>
-    <link rel="stylesheet" href="assets/valmerson_portifolio.css" />
+    <link rel="stylesheet" href="valmerson_portifolio.css" />
   </head>
-
   <body>
-    <abertura>
+    <div class="abertura">
       <div class="menu">
         <button>
           <img
@@ -24,63 +21,49 @@
           />
         </button>
       </div>
-      <!--! Caixa 01 -->
       <div class="saudacao">
         <h1>Hello! I'm a Business & Market Intelligence Consultor</h1>
       </div>
-
       <div class="apresenta">
         <h2>
-          My name is Valmerson Silva. I use data to identify trends,<br />
-          discover patterns and tell (interesting) stories.
+          My name is Valmerson Silva. I use data to identify trends,<br />discover
+          patterns and tell (interesting) stories.
         </h2>
       </div>
-
       <div class="botao_contato">
         <button>Let's work together!</button>
       </div>
-
       <div class="socialweb">
         <p>
-          Find me at <b>Github</b> and <b>LinkedIn</b> <br />
-          Download my resume (PDF 905 kb)
+          Find me at <b>Github</b> and <b>LinkedIn</b> <br />Download my resume
+          (PDF 905 kb)
         </p>
-        <!--! aqui terão que haver links -->
       </div>
-    </abertura>
+    </div>
 
-    <imagem>
-      <!--! Caixa 02 -->
-      <img
-        src="https://raw.githubusercontent.com/valmerson/vals_portfolio/main/assets/val_profile_picture.png"
-        alt="profile"
-        style="width: 100%; height: auto; max-width: 100%"
-      />
-    </imagem>
-
-    <sobre_mim>
-      <!--! Caixa 03 -->
-      <h2><b>About me</b></h2>
-      <h2>
+    <div class="container">
+      <div class="imagem">
+        <img
+          src="https://raw.githubusercontent.com/valmerson/vals_portfolio/main/assets/val_profile_picture.png"
+          alt="profile"
+          style="width: 100%; height: auto; max-width: 100%"
+        />
+      </div>
+      <div class="sobre_mim">
+        <h2><b>About me</b></h2>
         <p>
           I'm a keen person who likes working closely to strategy and
-          intelligence teams and help them to translate ideias and insights to
-          propperly support decision making.
+          intelligence teams and help them to translate ideas and insights to
+          properly support decision making.
         </p>
-      </h2>
-
-      <h3><b>Technical</b></h3>
-      <h4>
+        <h3><b>Technical</b></h3>
         <p>
           At the moment, you can find me working mainly with Power BI (and the
           various applications of DAX and M languages), Python and Power Point
           (the real thing, not newbies dimension) and, in general, anything
           related to SQL, QGIS, MyMaps, and some HTML and CSS tools.
         </p>
-      </h4>
-
-      <h3><b>Personal</b></h3>
-      <h4>
+        <h3><b>Personal</b></h3>
         <p>
           I was born in São Paulo - Brazil in the mid-90s and had a youth that
           accompanied the growth of technology. From a bachelor's degree in
@@ -88,54 +71,45 @@
           research and market intelligence, I'm doing a master's degree in Data
           Journalism, Automation and DataStorytelling at Isper.
         </p>
-      </h4>
-    </sobre_mim>
-
-    <empres_projetos class="empres_projetos">
-      <h2>Companies I have worked for</h2>
-      <div class="caixinhas">
-        <div class="caixinha">
-          <img
-            src="assets/sccon.png"
-            alt="logo_empresa_SSCON"
-            width="260"
-            height="80"
-          />
-          <p></p>
-        </div>
-        <div class="caixinha">
-          <img
-            src="assets/geofusion.png"
-            alt="logo_empresa_geofusion"
-            width="300"
-            height="150"
-          />
-          <p></p>
-        </div>
-        <div class="caixinha">
-          <img
-            src="assets/gfk.png"
-            alt="logo_empresa_gfk"
-            width="280"
-            height="110"
-          />
-          <p></p>
-        </div>
-        <div class="caixinha">
-          <img
-            src="assets/electrolux.png"
-            alt="logo_empresa_elux"
-            width="300"
-            height="180"
-          />
-          <p></p>
+      </div>
+      <div class="empres_projetos">
+        <h2>Companies I have worked for</h2>
+        <div class="caixinhas">
+          <div class="caixinha">
+            <img
+              src="assets/sccon.png"
+              alt="logo_empresa_SSCON"
+              width="260"
+              height="80"
+            />
+          </div>
+          <div class="caixinha">
+            <img
+              src="assets/geofusion.png"
+              alt="logo_empresa_geofusion"
+              width="300"
+              height="150"
+            />
+          </div>
+          <div class="caixinha">
+            <img
+              src="assets/gfk.png"
+              alt="logo_empresa_gfk"
+              width="280"
+              height="110"
+            />
+          </div>
+          <div class="caixinha">
+            <img
+              src="assets/electrolux.png"
+              alt="logo_empresa_elux"
+              width="300"
+              height="180"
+            />
+          </div>
         </div>
       </div>
-    </empres_projetos>
-
-    <retorno_clientes>
-      <!--! Caixa 05 -->
-      <div>
+      <div class="retorno_clientes">
         <h2>How I was perceived by the people I worked with</h2>
         <div class="recomendacao">
           <p>
@@ -150,9 +124,6 @@
           </p>
           <p><b>Daniele Kono - Data Analytics Manager at Geofusion</b></p>
         </div>
-      </div>
-
-      <div>
         <div class="recomendacao">
           <p>
             "I had the pleasure of working with Valmerson for almost 2 years at
@@ -165,9 +136,6 @@
           </p>
           <p><b>Nina Kitadai - Marketing Intelligence Manager at GfK</b></p>
         </div>
-      </div>
-
-      <div>
         <div class="recomendacao">
           <p>
             "Always focused, Valmerson is a committed professional and creative
@@ -176,13 +144,11 @@
             GIS tools (ArcGis and QGIS). It was a great experience having him on
             the team!"
           </p>
-          <p><b>Luana Oliveira - Project Coordiantor at SCCON</b></p>
+          <p><b>Luana Oliveira - Project Coordinator at SCCON</b></p>
         </div>
       </div>
-    </retorno_clientes>
-
-    <div class="projetos">
-      <div class="container">
+      <div class="section projetos">
+        <h2>Projects</h2>
         <div class="carousel">
           <div class="card">
             <img src="assets/price proj.jpg" alt="Raw Price Pulse" />
@@ -209,40 +175,37 @@
           </div>
         </div>
       </div>
+      <div class="contato">
+        <p>
+          <img
+            src="https://michaelpumo.com/icons/icon-working.png"
+            alt="working_emoji"
+            width="25"
+            height="25"
+          />
+          <span class="etiqueta_botao"> I'd like to work with you </span>
+        </p>
+        <p>
+          <img
+            src="https://raw.githubusercontent.com/valmerson/vals_portfolio/main/assets/moneys.png"
+            alt="money_icon"
+            width="25"
+            height="25"
+          />
+          <span class="etiqueta_botao">
+            I would like to quote the price of a project
+          </span>
+        </p>
+        <p>
+          <img
+            src="https://michaelpumo.com/icons/icon-wave.png"
+            alt="hand_icon"
+            width="25"
+            height="25"
+          />
+          <span class="etiqueta_botao"> I'd like to say hello </span>
+        </p>
+      </div>
     </div>
-
-    <contato>
-      <p>
-        <img
-          src="https://michaelpumo.com/icons/icon-working.png"
-          alt="working_emoji"
-          width="25"
-          height="25"
-        />
-        <span class="etiqueta_botao"> I'd like to work with you </span>
-      </p>
-
-      <p>
-        <img
-          src="https://michaelpumo.com/icons/icon-money.png"
-          alt="money_icon"
-          width="25"
-          height="25"
-        />
-        <span class="etiqueta_botao">
-          I would like to quote the price of a project
-        </span>
-      </p>
-
-      <p>
-        <img
-          src="https://michaelpumo.com/icons/icon-wave.png"
-          alt="hand_icon"
-          width="25"
-          height="25"
-        />
-        <span class="etiqueta_botao"> I'd like to say hello </span>
-      </p>
-    </contato>
   </body>
 </html>

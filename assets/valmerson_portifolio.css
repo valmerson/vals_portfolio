@@ -1,4 +1,13 @@
-abertura {
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.abertura {
   position: fixed;
   background: rgb(46, 48, 75);
   top: 0;
@@ -7,237 +16,85 @@ abertura {
   height: 100%;
 }
 
-.saudacao {
-  font-family: "Poppins", sans-serif;
+.container {
+  width: 52%; /* Ajuste para o espaço à direita */
+  margin-left: 48%; /* Ajuste para o espaço à direita */
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 40;
-  padding-top: 80px;
-  padding-left: 50px;
-  padding-bottom: 0;
-  padding-right: 0;
-  color: #fd8e8e;
-  font-size: large;
+  gap: 20px;
 }
 
-.apresenta {
-  font-family: "Poppins", sans-serif;
+.sobre_mim,
+.empres_projetos,
+.retorno_clientes,
+.projetos,
+.contato {
   display: flex;
   flex-direction: column;
-  gap: 40;
-  padding-top: 40px;
-  padding-left: 50px;
-  padding-bottom: 0;
-  padding-right: 0;
-  color: #fd8e8e;
-  font-size: small;
+  align-items: flex-start;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(255, 25, 140, 0.1);
+  margin-bottom: 20px;
+  border-radius: 20px;
 }
 
-.botao_contato {
-  padding-top: 40px;
-  padding-left: 50px;
-  padding-bottom: 0;
-  padding-right: 0;
-}
-
+.saudacao,
+.apresenta,
+.botao_contato,
 .socialweb {
-  padding-top: 20px;
-  padding-left: 50px;
-  font-family: "Poppins", sans-serif;
-  font-size: smaller;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background: #2e304b;
+  color: #fd8e8e;
+  margin-bottom: 20px;
+}
+
+.menu button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 button {
   font-family: "Poppins", sans-serif;
-  align-self: start;
   background-color: #2e304b;
   color: #fd8e8e;
   border-radius: 55px;
   border: 2px solid #fd8e8e;
   font-size: large;
   font-weight: bold;
-
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  padding-right: 20px;
+  padding: 20px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #fd8e8e; /* Cor de fundo do botão ao passar o mouse */
-  color: #2e304b; /* Cor da fonte ao passar o mouse */
+  background-color: #fd8e8e;
+  color: #2e304b;
 }
 
-imagem {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 52%;
-  height: 120%;
-  max-width: 53%;
-  padding: 0;
-  word-wrap: break-word;
-  text-decoration: solid;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-sobre_mim {
-  display: flex;
-  flex-direction: column;
-  font-family: Poppins, sans-serif;
-  color: rgba(46, 48, 75, 0.603);
-  position: absolute;
-  top: 130%;
-  max-height: 60%;
-  right: 0;
-  width: 50%;
-  max-width: 50%;
-  padding: -10px;
-  word-wrap: break-word;
-  text-decoration: solid;
-}
-
-empres_projetos {
-  font-family: "Poppins", sans-serif;
-  position: absolute;
-  top: 250%;
-  max-height: 60%;
-  right: 0;
-  width: 53%;
-  max-width: 50%;
-  padding: -10px;
-  word-wrap: break-word;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-retorno_clientes {
-  font-family: "Poppins", sans-serif;
-  color: rgba(46, 48, 75, 0.603);
-  font-style: italic;
-  position: absolute;
-  top: 320%;
-  max-height: 80%;
-  left: 60%;
-  right: 0%;
-  width: 60%;
-  max-width: 40%;
-  padding: -10px;
-  word-wrap: break-word;
-}
-
-.projetos {
-  font-family: "Helvetica", sans-serif;
-  position: absolute;
-  top: 400%;
-  max-height: 100%;
-  right: 0;
-  width: 50%;
-  max-width: 50%;
-  padding: -10px;
-  word-wrap: break-word;
-  text-decoration: solid;
-}
-
-.container {
-  width: 100%; /* Metade direita da tela */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: proximity;
-  /* scroll-snap-type: x mandatory; */
-  -webkit-overflow-scrolling: touch;
-  gap: 16px; /* Espaço entre os cards */
-  padding: 20px; /* Espaço para a rolagem lateral */
-}
-
-.card {
-  flex: none;
-  scroll-snap-align: start;
-  width: 380px; /* Ajuste a largura conforme necessário */
-  height: 510px; /* Ajuste a altura conforme necessário */
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  position: relative; /* Adicionado para que o texto possa ser posicionado dentro do card */
-}
-
-.card img {
-  width: 100%;
-  height: 100%; /* Alterado para ocupar toda a altura do card */
-  object-fit: cover;
-}
-
-.card p {
-  position: absolute; /* Permite posicionar o texto em relação ao card */
-  bottom: 0; /* Alinha o texto à parte inferior do card */
-  left: 0; /* Alinha o texto à esquerda do card */
-  width: 100%; /* Garante que o texto ocupe toda a largura do card */
-  margin: 0; /* Remove margens */
-  padding: 10px; /* Adiciona um pequeno espaçamento interno */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.7
-  ); /* Define um fundo semi-transparente para o texto */
-  font-size: 16px; /* Tamanho da fonte do texto */
-  color: #333; /* Cor do texto */
-}
-
-contato {
-  font-family: "Helvetica", sans-serif;
-  position: absolute;
-  top: 470%;
-  right: 0;
-  width: 50%;
-  max-width: 50%;
-  padding: -10px;
-  word-wrap: break-word;
-}
-
-.empres_projetos {
-  display: block;
-  flex-wrap: wrap;
-
-  /* justify-content: center;
-  align-items: center; */
-}
-
-/* Configurar o container das caixinhas */
 .caixinhas {
   display: flex;
-  flex-wrap: inherit;
-  margin-left: 0%;
-  right: 100%; /* Empurra o container das caixinhas para a direita */
-  width: 100%; /* O container das caixinhas ocupará 50% da tela */
-  height: 100%;
-  justify-content: center; /* Distribui espaço entre as caixinhas */
-  flex-basis: 200%; /* Define a largura de cada item como 50% da largura do contêiner */
-  box-sizing: content-box;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-/* Configurar cada caixinha */
 .caixinha {
   background: #e0e0e0;
-  display: block;
   padding: 20px;
-  margin: 10px;
   border-radius: 8px;
-  width: 41%;
-  height: 150px;
-  /* width: 280px;
-  height: 150px; */
-  /*flex: 1 1 calc(5% - 5px);  Cada caixinha ocupará 50% do container das caixinhas, menos a margem */
+  width: calc(50% - 20px); /* 50% largura menos espaço para a margem */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -246,9 +103,62 @@ contato {
   background: #d0d0d0;
 }
 
-/* Para telas menores, você pode querer ajustar o layout para uma única coluna */
+.recomendacao {
+  background: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 16px;
+  padding: 20px;
+  width: 100%; /* Garante que o carrossel ocupe toda a largura do contêiner */
+}
+
+.card {
+  flex: none;
+  scroll-snap-align: start;
+  width: 380px;
+  height: 510px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  color: #333;
+}
+
 @media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin-left: 0;
+    padding: 10px;
+  }
+
   .caixinha {
-    flex-basis: calc(100% - 20px); /* Largura total para telas menores */
+    width: 100%;
   }
 }
