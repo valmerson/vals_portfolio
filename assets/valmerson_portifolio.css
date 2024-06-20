@@ -79,6 +79,25 @@ button:hover {
   color: #2e304b;
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 24px 12px;
+}
+
+opcoes {
+  background: Lavender;
+  width: 240px;
+  padding: 12px;
+  border-radius: 12px;
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  clip-path: circle(36px at 48px 48px);
+  transition: all 1s;
+}
+
 img {
   max-width: 100%;
   height: auto;
