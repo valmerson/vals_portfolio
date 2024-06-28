@@ -18,12 +18,11 @@ html {
 
 .saudacao {
   position: fixed;
-  top: 25%;
+  top: 20%;
   left: 1%;
   color: #fd8e8e;
   margin-bottom: 15%;
   font-size: xx-large;
-  font-weight: 400;
   width: 45%;
 }
 
