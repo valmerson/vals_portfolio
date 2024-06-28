@@ -54,9 +54,7 @@ html {
   margin-bottom: 20px;
   font-size: xx-large;
   font-weight: 400;
-  width: 50vh;
-  max-width: 50vh;
-  /* width: 45%; */
+  width: 45%;
 }
 
 .socialweb {
