@@ -125,13 +125,18 @@ img {
 }
 
 .container {
-  width: 52%;
+  width: 50%;
   margin-left: 48%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background-color: rgb(46, 48, 75);
 }
+
+/* .imagem {
+  border-radius: 20px;
+} */
 
 .sobre_mim,
 .empres_projetos,
@@ -148,9 +153,9 @@ img {
   border-radius: 20px;
 }
 
-.caixinhas {
-  display: flex;
-  flex-wrap: wrap;
+.empres_projetos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas com larguras iguais */
   gap: 20px;
   justify-content: center;
 }
@@ -159,13 +164,39 @@ img {
   background: #e0e0e0;
   padding: 20px;
   border-radius: 8px;
-  width: calc(50% - 20px); /* 50% largura menos espaço para a margem */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  height: 150px;
+  justify-content: center;
+  align-content: center;
 }
 
+@media (max-width: 768px) {
+  .empres_projetos {
+    grid-template-columns: 1fr; /* Uma coluna para telas menores */
+  }
+}
+
+/* .empres_projetos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  -ms-flex-align: center;
+}
+
+.caixinha {
+  background: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  width: calc(50% - 20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}*/
+
 .caixinha:hover {
-  background: #d0d0d0;
+  background: white;
 }
 
 .recomendacao {
@@ -183,7 +214,7 @@ img {
   -webkit-overflow-scrolling: touch;
   gap: 16px;
   padding: 20px;
-  width: 100%; /* Garante que o carrossel ocupe toda a largura do contêiner */
+  width: 100%;
 }
 
 .card {

@@ -30,7 +30,7 @@
         </button>
         <div id="links">
           <p><a href="#aboutme">About Me</a></p>
-          <p><a href="#companies">Companies I've been</a></p>
+          <p><a href="#caixinhas">Companies I've been</a></p>
           <p><a href="#perceptions">My Managers Perceptions</a></p>
           <p><a href="#projectos">Projects</a></p>
           <p><a href="#contacts">Contacts</a></p>
@@ -62,6 +62,7 @@
 
         <script>
           const words = [
+            "Geographer",
             "Data Journalist",
             "Developer",
             "Data Analyst",
@@ -117,34 +118,36 @@
         <img
           src="https://raw.githubusercontent.com/valmerson/vals_portfolio/main/assets/val_profile_picture.png"
           alt="profile"
-          style="width: 100%; height: auto; max-width: 100%"
+          style="
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            border-radius: 20px;
+          "
         />
       </div>
       <div id="aboutme" class="sobre_mim">
         <h2><b>About me</b></h2>
-        <p>
-          I'm a keen person who likes working closely to strategy and
-          intelligence teams and help them to translate ideas and insights to
-          properly support decision making.
-        </p>
-        <h3><b>Technical</b></h3>
-        <p>
-          At the moment, you can find me working mainly with Power BI (and the
-          various applications of DAX and M languages), Python and Power Point
-          (the real thing, not newbies dimension) and, in general, anything
-          related to SQL, QGIS, MyMaps, and some HTML and CSS tools.
-        </p>
-        <h3><b>Personal</b></h3>
-        <p>
-          I was born in São Paulo - Brazil in the mid-90s and had a youth that
-          accompanied the growth of technology. From a bachelor's degree in
-          Geography at USP followed by a few years working in the world of
-          research and market intelligence, I'm doing a master's degree in Data
-          Journalism, Automation and DataStorytelling at Isper.
-        </p>
+        I'm a keen person who likes working closely to strategy and intelligence
+        teams and help them to translate ideas and insights to properly support
+        decision making.
+
+        <h2><b>Technical</b></h2>
+        At the moment, you can find me working mainly with Power BI (and the
+        various applications of DAX and M languages), Python and Power Point
+        (the real thing, not newbies dimension) and, in general, anything
+        related to SQL, QGIS, MyMaps, and some HTML and CSS tools.
+
+        <h2><b>Personal</b></h2>
+        I was born in São Paulo - Brazil in the mid-90s and had a youth that
+        accompanied the growth of technology. From a bachelor's degree in
+        Geography at USP followed by a few years working in the world of
+        research and market intelligence, I'm doing a master's degree in Data
+        Journalism, Automation and DataStorytelling at Isper.
       </div>
-      <div id="companies" class="empres_projetos">
+      <div id="caixinhas" class="empres_projetos">
         <h2>Companies I have worked for</h2>
+        <br />
         <div class="caixinha">
           <a href="https://www.sccon.com.br/" target="_blank">
             <img
@@ -272,16 +275,27 @@
         </p>
 
         <p>
-          <span
-            class="etiqueta_botao"
-            style="font-size: 1em; color: black; font-style: italic"
+          <span class="etiqueta_botao" style="font-size: 1em; color: black"
             ><b>Find me at: valmerson.sistema@gmail.com or </b>
             <a
               href="https://api.whatsapp.com/send?phone=11994885575"
               target="_blank"
               rel="noopener noreferrer"
-              >WhatsApp</a
             >
+              <img
+                src="assets/whatsapp_.png"
+                alt="Ícone do WhatsApp"
+                style="width: 20px; height: 20px; vertical-align: middle"
+              />
+              <span
+                style="
+                  color: green;
+                  font-weight: bold;
+                  /* text-decoration: underline; */
+                "
+                >WhatsApp</span
+              >
+            </a>
           </span>
         </p>
       </div>
