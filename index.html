@@ -6,44 +6,103 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
     </style>
+
+    <style>
+      .show {
+        display: inline;
+      }
+      .hide {
+        display: none;
+      }
+    </style>
+
     <title>🌎 Valmerson</title>
-    <link rel="stylesheet" href="assets/valmerson_portifolio.css" />
+    <link rel="stylesheet" href="valmerson_portifolio.css" />
   </head>
   <body>
     <div class="abertura">
-      <div id="nacegacao" class="menu">
+      <nav id="navegador" class="">
         <button id="opcoes">
           <img
             src="https://michaelpumo.com/icons/icon-hamburger.png"
             alt="menu"
-            width="35"
-            height="35"
           />
         </button>
         <div id="links">
-          <a href="About Me"></a>
-          <a href="Companies I have worked for"></a>
-          <a href="How I was perceived by the people I worked with"></a>
-          <a href="My Projects"></a>
-          <a href="My contacts"></a> <b></b>
+          <p><a href="#aboutme">About Me</a></p>
+          <p><a href="#companies">Companies I've been</a></p>
+          <p><a href="#perceptions">My Managers Perceptions</a></p>
+          <p><a href="#projectos">Projects</a></p>
+          <p><a href="#contacts">Contacts</a></p>
         </div>
-      </div>
+      </nav>
+
+      <script>
+        const navegador = document.getElementById("navegador");
+        const opcoes = document.getElementById("opcoes");
+
+        function expandir() {
+          navegador.classList.toggle("ativada");
+        }
+        opcoes.onclick = expandir;
+      </script>
+
       <div class="saudacao">
-        <h1>Hello! I'm a Business & Market Intelligence Consultor</h1>
-      </div>
-      <div class="apresenta">
-        <h2>
-          My name is Valmerson Silva. I use data to identify trends,<br />discover
+        <p>Hello! I'm a <span id="dynamic-text">Geographer</span></p>
+
+        <script>
+          const words = [
+            "Data Journalist",
+            "Developer",
+            "Data Analyst",
+            "BI Specialist",
+            "Language enthusiast",
+          ];
+
+          let count = 0;
+          const dynamicText = document.getElementById("dynamic-text");
+
+          function showNext() {
+            dynamicText.classList.remove("show");
+            dynamicText.classList.add("hide");
+
+            count = (count + 1) % words.length;
+
+            dynamicText.textContent = words[count];
+            dynamicText.classList.remove("hide");
+            dynamicText.classList.add("show");
+          }
+
+          dynamicText.classList.add("show");
+
+          setInterval(showNext, 500);
+        </script>
+
+        <h5>
+          My name is Valmerson Silva. I use data to identify trends, discover
           patterns and tell (interesting) stories.
-        </h2>
+        </h5>
       </div>
+
       <div class="botao_contato">
-        <button>Let's work together!</button>
+        <a href="#contacts" style="color: #2e304b"> Let's work together!</a>
       </div>
+
       <div class="socialweb">
         <p>
-          Find me at <b>Github</b> and <b>LinkedIn</b> <br />Download my resume
-          (PDF 905 kb)
+          Find me at
+          <b>
+            <a href="https://github.com/valmerson" target="_blank">GitHub</a>
+          </b>
+          and
+          <b>
+            <a
+              href="https://www.linkedin.com/in/valmerson-silva-37971a91/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </b>
+          <br />
         </p>
       </div>
     </div>
@@ -56,7 +115,7 @@
           style="width: 100%; height: auto; max-width: 100%"
         />
       </div>
-      <div class="sobre_mim">
+      <div id="aboutme" class="sobre_mim">
         <h2><b>About me</b></h2>
         <p>
           I'm a keen person who likes working closely to strategy and
@@ -79,7 +138,7 @@
           Journalism, Automation and DataStorytelling at Isper.
         </p>
       </div>
-      <div class="empres_projetos">
+      <div id="companies" class="empres_projetos">
         <h2>Companies I have worked for</h2>
         <div class="caixinha">
           <a href="https://www.sccon.com.br/" target="_blank">
@@ -122,8 +181,7 @@
           </a>
         </div>
       </div>
-
-      <div class="retorno_clientes">
+      <div id="perceptions" class="retorno_clientes">
         <h2>How I was perceived by the people I worked with</h2>
         <div class="recomendacao">
           <p>
@@ -161,7 +219,7 @@
           <p><b>Luana Oliveira - Project Coordinator at SCCON</b></p>
         </div>
       </div>
-      <div class="section projetos">
+      <div id="projectos" class="section projetos">
         <h2>Projects</h2>
         <div class="carousel">
           <div class="card">
@@ -191,36 +249,17 @@
       </div>
       <div class="contato">
         <p>
-          <!-- <img
-            src="assets/man working.png"
-            alt="working_emoji"
-            width="50"
-            height="50"
-          /> -->
           <span class="etiqueta_botao" style="font-size: 1em"
             ><b> If you would like to: </b></span
           >
         </p>
         <p>
-          <!-- <img
-            src="assets/man working.png"
-            alt="working_emoji"
-            width="50"
-            height="50"
-          /> -->
           <span class="etiqueta_botao" style="font-size: 1em"
-            ><b
-              >&nbsp;&#128187; Work and create good projects with me;
-            </b></span
+            ><b>&nbsp;&#128187; Work and create good projects with me;</b></span
           >
         </p>
+
         <p>
-          <!-- <img
-            src="https://raw.githubusercontent.com/valmerson/vals_portfolio/main/assets/moneys.png"
-            alt="money_icon"
-            width="35"
-            height="35"
-          /> -->
           <span class="etiqueta_botao" style="font-size: 1em"
             ><b>&nbsp;&#128181; Get a price quote for a project;</b>
           </span>
